@@ -29,7 +29,7 @@ $sudo wget <http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip>
   $unzip dol_ethz.zip -d dol，  
   最后解压systemc:$tar -zxvf systemc-2.3.1.tgz
 6. 编译systemc，这一步也是照着ppt进行的，最后运行configure之后的结果如下：
-![图片1.png](https://ooo.0o0.ooo/2016/10/09/57fa5c55707bd.png)  
+![4.jpg](https://ooo.0o0.ooo/2016/10/09/57fa726e3692d.jpg)  
 首先解压后进入systemc-2.3.1的目录下：
 $cd systemc-2.3.1，  
 接着新建一个临时文件夹objdir： $mkdir objdir。  

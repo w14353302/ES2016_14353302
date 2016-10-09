@@ -1,22 +1,28 @@
 # ES2016_14353302
 ***
 # Description(DOL框架描述)
+*Distributed Operation Layer : The distributed operation layer (DOL) is a software development framework to program parallel applications. The DOL allows to specify applications based on the Kahn process network model of computation and features a simulation engine based on SystemC. Moreover, the DOL provides an XML-based specification format to describe the implementation of a parallel application on a multi-processor systems, including binding and mapping.DOL consists of basically three parts:
+
+*DOL Application Programming Interface: The DOL defines a set of computation and communication routines that enable the programming of distributed, parallel applications for the SHAPES platform. Using these routines, application programmers can write programs without having detailed knowledge about the underlying architecture. In fact, these routines are subject to further refinement in the hardware dependent software (HdS) layer.
+*DOL Functional Simulation: To provide programmers a possibility to test their applications, a functional simulation framework has been developed. Besides functional verification of applications, this framework is used to obtain performance parameters at the application level.
+*DOL Mapping Optimization: The goal of the DOL mapping optimization is to compute a set of optimal mappings of an application onto the SHAPES architecture platform. In a first step, XML based specification formats have been defined that allow to describe the application and the architecture at an abstract level. Still, all the information necessary to obtain accurate performance estimates is contained.
+
 # How to install(DOL安装笔记)
 1. 配置DOL之前首先下载VMWARE虚拟机，然后使用虚拟机安装Ubuntu，这两步都是根据ppt给出的教程来完成的，没有特别要注意的地方，只是感觉装个乌邦图要好久的样子。  
-2. 装好Ubuntu之后就开始配置DOL了，首先安装一些必要的环境：  
+2. 装好Ubuntu之后就开始配置DOL了，首先安装一些必要的环境： 
 $sudo apt-get update  
 在执行这一步时出现了error:"could not get lock/var/lib/dpkg"  
 百度得知是因为有另外一个程序正在运行，导致资源被锁不可用。而导致资源被锁的原因可能是上次运行安装或更新时没有正常完成，进而出现此状况，解决的办法其实很简单： 
 在终端中敲入以下两句,再进行安装就可以了  
-sudo rm /var/cache/apt/archives/lock  
-sudo rm /var/lib/dpkg/lock
+$sudo rm /var/cache/apt/archives/lock
+$sudo rm /var/lib/dpkg/lock
 3. 接着继续安装一些环境，如下所示，在这一步骤中没有出现任何错误  
 $sudo apt-get install ant  
 $sudo apt-get install openjdk-7-jdk   
 $sudo apt-get install unzip  
 4. 下载文件   
-sudo wget <http://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.1.tgz>  
-sudo wget <http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip>
+$sudo wget <http://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.1.tgz>  
+$sudo wget <http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip>
 5. 解压文件，这一步直接照着ppt来的没有出现什么错误  
   首先新建dol的文件夹:$mkdir dol，  
   接着将dolethz.zip解压到dol文件夹中:

@@ -38,8 +38,8 @@ $sudo make install
 7. 编译dol，这一步也是照着ppt来的在打开build_zip.xml文件后发现此文件无法修改，在终端输入：
 $sudo gedit build_zip.xml即可修改。  
 首先进入刚刚dol的文件夹$cd ../dol修改build_zip.xml文件,找到下面这段话，就是说上面编译的systemc位置在哪里，  
-<property name="systemc.inc" value="YYY/include"/>  
-<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>  
+property name="systemc.inc" value="YYY/include"/  
+property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/    
 把YYY改成上页pwd的结果
 8. 编译dol
 然后是编译:  

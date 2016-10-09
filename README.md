@@ -14,7 +14,7 @@ $sudo apt-get update
 在执行这一步时出现了error:"could not get lock/var/lib/dpkg"  
 百度得知是因为有另外一个程序正在运行，导致资源被锁不可用。而导致资源被锁的原因可能是上次运行安装或更新时没有正常完成，进而出现此状况，解决的办法其实很简单： 
 在终端中敲入以下两句,再进行安装就可以了  
-$sudo rm /var/cache/apt/archives/lock
+$sudo rm /var/cache/apt/archives/lock  
 $sudo rm /var/lib/dpkg/lock
 3. 接着继续安装一些环境，如下所示，在这一步骤中没有出现任何错误  
 $sudo apt-get install ant  
@@ -27,7 +27,7 @@ $sudo wget <http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip>
   首先新建dol的文件夹:$mkdir dol，  
   接着将dolethz.zip解压到dol文件夹中:
   $unzip dol_ethz.zip -d dol，  
-  最后解压systemc:$tar -zxvf systemc-2.3.1.tgz
+  最后解压systemc: $tar -zxvf systemc-2.3.1.tgz
 6. 编译systemc，这一步也是照着ppt进行的，最后运行configure之后的结果如下：
 ![4.jpg](https://ooo.0o0.ooo/2016/10/09/57fa726e3692d.jpg)  
 首先解压后进入systemc-2.3.1的目录下：

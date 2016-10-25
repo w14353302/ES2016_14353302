@@ -1,11 +1,11 @@
 一. 实验过程
 
-1. 按照ppt给出的代码生成Deadlock.java文件
-       ![1.png](https://ooo.0o0.ooo/2016/10/25/580f5166c9bc5.png)
-2. 在windows系统下运行javac Deadlock.java文件，生成.class文件
-3. 在windows系统下生成.bat文件，并将该文件放在.class的目录下
-   
-   4.双击.bat文件，观察结果：发现在第291次的时候发生死锁
+1. 按照ppt给出的代码生成Deadlock.java文件   
+![1.png](https://ooo.0o0.ooo/2016/10/25/580f5166c9bc5.png)   
+2. 在windows系统下运行javac Deadlock.java文件，生成.class文件   
+3. 在windows系统下生成.bat文件，并将该文件放在.class的目录下   
+      
+4.双击.bat文件，观察结果：发现在第291次的时候发生死锁   
 
       
 

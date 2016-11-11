@@ -1,5 +1,5 @@
 #一.ROS配置过程   
-*因为自己在第一次配置ROS的时候忘记截图，为了实验效果所以重新跑了一遍指令，截到的图有些东西已经下载完了所以会有不同   
+* 因为自己在第一次配置ROS的时候忘记截图，为了实验效果所以重新跑了一遍指令，截到的图有些东西已经下载完了所以会有不同   
 1.setup sources list   
 输入指令：sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'   
 2.Set up my keys   
